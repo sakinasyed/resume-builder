@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+input {
+  border: 1px solid #cccccc;
+  outline: none;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+input:hover {
+  border: 1px solid #adadad;
+}
+
+input:focus {
+  border: 1px solid #239ce2;
+}
+.imageDisplay input,
+.imageDisplay label {
+  padding-right: 50px;
+  position: relative;
+  bottom: 100px;
+  right: 2rem;
+  color: #000;
+}
+
+.imageDisplay img {
+  width: 12rem !important;
+  height: 12rem;
+  border-radius: 50%;
+  border: #fff solid 5px;
+
+  margin: 0px 0.9rem;
+  position: relative;
+  bottom: 1rem;
+}
+
+@media (max-width: 750px) {
+  .imageDisplay img {
+    margin: 0px 0rem;
+    position: relative;
+    right: 0.75rem;
+  }
+}
